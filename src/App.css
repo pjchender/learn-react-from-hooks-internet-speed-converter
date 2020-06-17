@@ -1,38 +1,116 @@
-.App {
-  text-align: center;
-}
+/**
+* Design Credit:
+* https://dribbble.com/shots/4241423-Exchanger-landing-page
+**/
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-family: Verdana;
+  background: #1b6ca8;
+  background: linear-gradient(237deg, #134c76 48%, #175c8f 85%, #186197 100%);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 1px 1px 10px 1px #134c76;
+  border-radius: 7px;
+  background: white;
+  min-width: 440px;
+  min-height: 320px;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  background-color: #0a97b0;
+  color: white;
+  font-size: 20px;
+}
+
+.card-body {
+  flex: 1;
+  padding: 30px;
+}
+
+.unit-control {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 45px;
+}
+
+.unit {
+  display: inline-flex;
+  background-color: #0a97b0;
+  align-items: center;
+  justify-content: center;
+  width: 75px;
+  height: 35px;
+  color: white;
+  border-radius: 3px;
+}
+
+.exchange-icon {
+  color: #6886c5;
+}
+
+.angle-icon {
+  color: #6886c5;
+}
+
+.converter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.converter-title {
+  color: #6886c5;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.card-footer {
+  min-height: 40px;
+  margin: 5px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  background-color: #0a97b0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.input-number {
+  font-size: 32px;
+  max-width: 170px;
+  flex: 1;
+  display: inline-block;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-family: Courier;
+  color: #0a97b0;
+  font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.text-right {
+  text-align: right;
+}
+
+.flex-1 {
+  flex: 1;
 }

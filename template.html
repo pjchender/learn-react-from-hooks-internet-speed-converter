@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /**
+     * Design Credit:
+     * https://dribbble.com/shots/4241423-Exchanger-landing-page
+     **/
+
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: Verdana;
+      background: #1b6ca8;
+      background: linear-gradient(237deg,
+          #134c76 48%,
+          #175c8f 85%,
+          #186197 100%);
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      box-shadow: 1px 1px 10px 1px #134c76;
+      border-radius: 7px;
+      background: white;
+      min-width: 440px;
+      min-height: 320px;
+    }
+
+    .card-header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 50px;
+      border-top-left-radius: 6px;
+      border-top-right-radius: 6px;
+      background-color: #0a97b0;
+      color: white;
+      font-size: 20px;
+    }
+
+    .card-body {
+      flex: 1;
+      padding: 30px;
+    }
+
+    .unit-control {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 45px;
+    }
+
+    .unit {
+      display: inline-flex;
+      background-color: #0a97b0;
+      align-items: center;
+      justify-content: center;
+      width: 75px;
+      height: 35px;
+      color: white;
+      border-radius: 3px;
+    }
+
+    .exchange-icon {
+      color: #6886c5;
+    }
+
+    .angle-icon {
+      color: #6886c5;
+    }
+
+    .converter {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .converter-title {
+      color: #6886c5;
+      font-weight: bold;
+      margin-bottom: 12px;
+    }
+
+    .card-footer {
+      min-height: 40px;
+      margin: 5px;
+      border-bottom-left-radius: 6px;
+      border-bottom-right-radius: 6px;
+      background-color: #0a97b0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+    }
+
+    .input-number {
+      font-size: 32px;
+      max-width: 170px;
+      flex: 1;
+      display: inline-block;
+      background: transparent;
+      border: none;
+      outline: none;
+      font-family: Courier;
+      color: #0a97b0;
+      font-weight: bold;
+    }
+
+    .text-right {
+      text-align: right;
+    }
+
+    .flex-1 {
+      flex: 1;
+    }
+  </style>
+  <script src="https://kit.fontawesome.com/8e97bcaa1f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="card-header">Network Speed Converter</div>
+    <div class="card-body">
+      <div class="unit-control">
+        <div class="unit">Mbps</div>
+        <span class="exchange-icon fa-fw fa-stack">
+          <i class="far fa-circle fa-stack-2x"></i>
+          <i class="fas fa-exchange-alt fa-stack-1x"></i>
+        </span>
+        <div class="unit">MB/s</div>
+      </div>
+      <div class="converter">
+        <div class="flex-1">
+          <div class="converter-title">Set</div>
+          <input type="number" class="input-number" min="0" />
+        </div>
+        <span class="angle-icon fa-2x" style="margin-top: 30px">
+          <i class="fas fa-angle-right"></i>
+        </span>
+        <div class="text-right flex-1">
+          <div class="converter-title">Show</div>
+          <input type="text" class="input-number text-right" disabled value="125" />
+        </div>
+      </div>
+    </div>
+    <div class="card-footer">FAST</div>
+  </div>
+</body>
+
+</html>
