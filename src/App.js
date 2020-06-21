@@ -43,7 +43,7 @@ function App() {
           </div>
         </div>
       </div>
-      <CardFooter />
+      <CardFooter inputValue={inputValue} />
     </div>
   );
 }
