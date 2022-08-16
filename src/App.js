@@ -1,6 +1,6 @@
 import './App.css';
 
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 import CardFooter from './components/CardFooter';
 import UnitControl from './components/UnitControl';
