@@ -1,5 +1,3 @@
-import React from 'react';
-
 const UnitControl = () => (
   <div className="unit-control">
     <div className="unit">Mbps</div>
