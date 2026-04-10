@@ -5,12 +5,11 @@ import { useState } from 'react';
 import CardFooter from './components/CardFooter';
 import UnitControl from './components/UnitControl';
 import UnitConverter from './components/UnitConverter';
-import { fab } from '@fortawesome/free-brands-svg-icons';
-import { far } from '@fortawesome/free-regular-svg-icons';
-import { fas } from '@fortawesome/free-solid-svg-icons';
+import { faAngleRight, faExchangeAlt } from '@fortawesome/free-solid-svg-icons';
+import { faCircle } from '@fortawesome/free-regular-svg-icons';
 import { library } from '@fortawesome/fontawesome-svg-core';
 
-library.add(fab, fas, far);
+library.add(faAngleRight, faExchangeAlt, faCircle);
 
 function App() {
   const [inputValue, setInputValue] = useState(0);

@@ -1,7 +1,4 @@
-import React from 'react';
-
-const CardFooter = (props) => {
-  const { inputValue } = props;
+const CardFooter = ({ inputValue }) => {
 
   let criteria = {};
 
